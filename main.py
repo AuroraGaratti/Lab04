@@ -1,5 +1,4 @@
 from lingotto_fiere import LingottoFiere
-
 def menu():
     print(f'\n--- MENU LINGOTTO FIERE ---')
     print("1. Modifica nome del centro fieristico")
@@ -19,7 +18,8 @@ def main():
 
         if scelta == "1":
             nuovo_nome = input("Inserisci il nuovo nome del centro fieristico: ")
-            # TODO: Aggiorna il nome del centro fieristico
+            lingotto.nome=nuovo_nome
+            print(f"Il nuovo nome del centro fieristico è {lingotto.nome}")
 
         elif scelta == "2":
             file_path = "dati_lingotto.csv"
